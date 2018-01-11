@@ -11,8 +11,19 @@ function button() {
     document.addEventListener("click", click);
     function click() {
         for (let i = 0; i < friends.length; i++) {
+            //create div
             let div = document.createElement("div");
+            //set div class
             div.className = "friend";
+            //create h3
+            let h3 = document.createElement("h3");
+            //create h3 text with friend's name
+            let h3Text = document.createTextNode(friends[i]);
+            //put h3 text in h3
+            h3.appendChild(h3Text);
+            //put h3 in div
+            div.appendChild(h3);
+            //put div in body
             document.body.appendChild(div);
         }
     }
