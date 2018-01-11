@@ -15,6 +15,7 @@ function button() {
             let div = document.createElement("div");
             //set div class
             div.className = "friend";
+
             //create h3
             let h3 = document.createElement("h3");
             //create h3 text with friend's name
@@ -23,6 +24,27 @@ function button() {
             h3.appendChild(h3Text);
             //put h3 in div
             div.appendChild(h3);
+
+            //sing loop
+            for (let j = 99; j > 0; j--) {
+                //create p
+                let p = document.createElement("p");
+                //initialize pText
+                let pText;
+                //create p text with line from song
+                if (j > 2) {
+                    pText = document.createTextNode(j + " lines of code in the file, " + j + " lines of code; " + friends[i] + " strikes one out, clears it all out, " + (j - 1) + " lines of code in the file");
+                } else if (j === 2) {
+                    pText = document.createTextNode(j + " lines of code in the file, " + j + " lines of code; " + friends[i] + " strikes one out, clears it all out, " + (j - 1) + " line of code in the file");
+                } else {
+                    pText = document.createTextNode(j + " line of code in the file, " + j + " line of code; " + friends[i] + " strikes one out, clears it all out, no more lines of code in the file");
+                }
+                //put p text in p
+                p.appendChild(pText);
+                //put p in div
+                div.appendChild(p);
+            }
+
             //put div in body
             document.body.appendChild(div);
         }
