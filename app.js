@@ -10,7 +10,11 @@ function button() {
     //listen for button click
     document.addEventListener("click", click);
     function click() {
-        sing();
+        for (let i = 0; i < friends.length; i++) {
+            let div = document.createElement("div");
+            div.className = "friend";
+            document.body.appendChild(div);
+        }
     }
 }
 
