@@ -1,5 +1,4 @@
 # 99 Lines of Code In The File - Part 1
-Covalence
 
 ## Info
 * This lab consists of two parts
@@ -50,7 +49,6 @@ JANE:
 ``````````````````````````````
 
 # 99 Lines of Code In The File - Part 2
-Covalence
 
 ## Info
 * This lab consists of two parts
